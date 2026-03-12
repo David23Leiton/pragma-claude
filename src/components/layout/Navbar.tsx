@@ -32,13 +32,15 @@ export default function Navbar() {
       >
         <a
           href="#"
-          className={cn(
-            'font-bold text-lg md:text-xl tracking-tight shrink-0 transition-colors duration-500',
-            scrolled ? 'text-electric-cyan' : 'text-white'
-          )}
+          className="font-bold text-lg md:text-xl tracking-tight shrink-0 transition-colors duration-500"
           style={{ fontFamily: "'Outfit', sans-serif" }}
         >
-          Pragma
+          <span className={cn('transition-colors duration-500', scrolled ? 'text-electric-cyan' : 'text-white')}>
+            Pragma
+          </span>{' '}
+          <span className={cn('transition-colors duration-500', scrolled ? 'text-electric-cyan' : 'text-electric-cyan')}>
+            Digital
+          </span>
         </a>
 
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium">
