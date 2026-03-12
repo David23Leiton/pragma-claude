@@ -481,7 +481,7 @@ export default function LiveCodeSection() {
         {/* IDE Body - two panels */}
         <div className="flex flex-col md:flex-row">
           {/* Code Panel */}
-          <div className="w-full md:w-[60%] p-3 sm:p-4 md:p-6 border-r border-white/[0.04] h-[350px] sm:h-[400px] md:h-[480px] overflow-hidden">
+          <div className="w-full md:w-[60%] p-3 sm:p-4 md:p-6 border-b md:border-b-0 border-r-0 md:border-r border-white/[0.08] md:border-white/[0.04] h-[350px] sm:h-[400px] md:h-[480px] overflow-hidden">
             <pre className="text-[10px] sm:text-[11px] md:text-[13px] leading-relaxed font-mono overflow-x-auto">
               {lines.map((line, i) => (
                 <div key={i} className="flex">
