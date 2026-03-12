@@ -2,7 +2,7 @@ import { MessageCircle, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer id="contacto" className="bg-midnight-blue rounded-t-[2.5rem] pt-16 pb-8 px-4 md:px-8">
+    <footer id="contacto" className="bg-midnight-blue rounded-t-[1.5rem] md:rounded-t-[2.5rem] pt-12 md:pt-16 pb-8 px-4 md:px-8">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Left - Brand */}

@@ -61,8 +61,8 @@ export default function Navbar() {
           <MagneticButton as="a" href="https://wa.me/573124526845" target="_blank" rel="noopener noreferrer">
             <div className="relative overflow-hidden rounded-full group cursor-pointer">
               <span className="absolute inset-0 w-full h-full bg-electric-cyan translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
-              <div className="relative flex items-center px-5 py-2.5 bg-electric-cyan rounded-full transition-colors duration-500">
-                <span className="relative z-10 font-bold text-sm text-midnight-blue">
+              <div className="relative flex items-center px-4 py-2 md:px-5 md:py-2.5 bg-electric-cyan rounded-full transition-colors duration-500">
+                <span className="relative z-10 font-bold text-xs md:text-sm text-midnight-blue">
                   Hablemos
                 </span>
               </div>

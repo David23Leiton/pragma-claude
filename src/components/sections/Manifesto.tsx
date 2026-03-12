@@ -82,7 +82,7 @@ export default function ManifestoSection() {
     <section
       ref={sectionRef}
       id="nosotros"
-      className="relative bg-deep-charcoal py-28 md:py-40 px-4 md:px-8 overflow-hidden"
+      className="relative bg-deep-charcoal py-20 md:py-40 px-4 md:px-8 overflow-hidden"
     >
       {/* Background image */}
       <div
@@ -95,21 +95,21 @@ export default function ManifestoSection() {
 
       <div className="relative z-10 max-w-[900px] mx-auto text-center">
         <div className="space-y-4 md:space-y-6 mb-12">
-          <p className="manifesto-line text-white/60 text-xl md:text-2xl lg:text-3xl leading-snug">
+          <p className="manifesto-line text-white/60 text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
             La mayoría pregunta:
           </p>
           <p
-            className="manifesto-line text-white text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
+            className="manifesto-line text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
             style={{ fontFamily: "'Outfit', sans-serif" }}
           >
             ¿cuánto cuesta un sistema?
           </p>
-          <div className="h-4" />
-          <p className="manifesto-line text-white/60 text-xl md:text-2xl lg:text-3xl leading-snug">
+          <div className="h-3 md:h-4" />
+          <p className="manifesto-line text-white/60 text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
             Nosotros preguntamos:
           </p>
           <p
-            className="manifesto-line text-electric-cyan text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
+            className="manifesto-line text-electric-cyan text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
             style={{ fontFamily: "'Outfit', sans-serif" }}
           >
             ¿cuánto te está costando no tenerlo?
@@ -132,8 +132,8 @@ export default function ManifestoSection() {
           >
             <div className="relative overflow-hidden rounded-full group cursor-pointer inline-block">
               <span className="absolute inset-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
-              <div className="relative flex items-center px-10 py-4 bg-electric-cyan rounded-full">
-                <span className="relative z-10 font-bold text-base text-midnight-blue group-hover:text-midnight-blue transition-colors duration-500">
+              <div className="relative flex items-center px-7 py-3 md:px-10 md:py-4 bg-electric-cyan rounded-full">
+                <span className="relative z-10 font-bold text-sm md:text-base text-midnight-blue group-hover:text-midnight-blue transition-colors duration-500">
                   Hablemos de tu proyecto
                 </span>
               </div>

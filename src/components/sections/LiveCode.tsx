@@ -449,8 +449,10 @@ export default function LiveCodeSection() {
           className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
           style={{ fontFamily: "'Outfit', sans-serif" }}
         >
-          ¿Sigues haciendo manualmente<br />
-          lo que un sistema podría<br />
+          ¿Sigues haciendo manualmente{' '}
+          <span className="hidden md:inline"><br /></span>
+          lo que un sistema podría{' '}
+          <span className="hidden md:inline"><br /></span>
           hacer solo?
         </h2>
         <p className="text-white/50 text-sm md:text-base leading-relaxed max-w-[520px] mx-auto">
@@ -479,8 +481,8 @@ export default function LiveCodeSection() {
         {/* IDE Body - two panels */}
         <div className="flex flex-col md:flex-row">
           {/* Code Panel */}
-          <div className="w-full md:w-[60%] p-4 md:p-6 border-r border-white/[0.04] h-[400px] md:h-[480px] overflow-hidden">
-            <pre className="text-[11px] md:text-[13px] leading-relaxed font-mono">
+          <div className="w-full md:w-[60%] p-3 sm:p-4 md:p-6 border-r border-white/[0.04] h-[350px] sm:h-[400px] md:h-[480px] overflow-hidden">
+            <pre className="text-[10px] sm:text-[11px] md:text-[13px] leading-relaxed font-mono overflow-x-auto">
               {lines.map((line, i) => (
                 <div key={i} className="flex">
                   <span className="inline-block w-8 text-right mr-4 text-white/15 select-none shrink-0">
@@ -502,7 +504,7 @@ export default function LiveCodeSection() {
           </div>
 
           {/* Output Panel */}
-          <div className="w-full md:w-[40%] p-4 md:p-6 bg-[#080a0e] h-[300px] md:h-[480px] overflow-hidden">
+          <div className="w-full md:w-[40%] p-3 sm:p-4 md:p-6 bg-[#080a0e] h-[280px] sm:h-[300px] md:h-[480px] overflow-hidden">
             {project.outputType === 'clarity' && <ClarityOutput progress={progress} />}
             {project.outputType === 'nexus-ecom' && <NexusEcomOutput progress={progress} />}
             {project.outputType === 'zenith' && <ZenithOutput progress={progress} />}

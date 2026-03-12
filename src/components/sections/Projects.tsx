@@ -286,25 +286,25 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="relative w-full rounded-3xl overflow-hidden bg-deep-charcoal border border-white/[0.06] opacity-0"
-      style={{ minHeight: '380px' }}
+      className="relative w-full rounded-2xl md:rounded-3xl overflow-hidden bg-deep-charcoal border border-white/[0.06] opacity-0"
+      style={{ minHeight: 'auto' }}
     >
-      {/* SVG Animation Background */}
-      <div className="absolute top-0 right-0 w-1/2 h-full pointer-events-none">
+      {/* SVG Animation Background - hidden on mobile, visible on md+ */}
+      <div className="hidden md:block absolute top-0 right-0 w-1/2 h-full pointer-events-none">
         <AnimComponent />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 p-8 md:p-12 flex flex-col justify-center h-full max-w-[60%]">
-        <span className="text-electric-cyan text-[10px] md:text-xs font-mono tracking-widest mb-4">
+      <div className="relative z-10 p-6 sm:p-8 md:p-12 flex flex-col justify-center h-full max-w-full md:max-w-[60%]">
+        <span className="text-electric-cyan text-[10px] md:text-xs font-mono tracking-widest mb-3 md:mb-4">
           {project.category}
         </span>
 
-        <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
+        <h3 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
           {project.name}
         </h3>
 
-        <p className="text-white/50 text-sm md:text-base leading-relaxed mb-8 max-w-[480px]">
+        <p className="text-white/50 text-sm md:text-base leading-relaxed mb-6 md:mb-8 max-w-[480px]">
           {project.description}
         </p>
 
@@ -312,7 +312,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.stack.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 rounded-lg text-[10px] md:text-xs font-mono bg-white/[0.04] text-white/50 border border-white/[0.06]"
+              className="px-2.5 sm:px-3 py-1 rounded-lg text-[10px] md:text-xs font-mono bg-white/[0.04] text-white/50 border border-white/[0.06]"
             >
               {tech}
             </span>
@@ -351,10 +351,10 @@ export default function ProjectsSection() {
     <section
       ref={sectionRef}
       id="proyectos"
-      className="bg-midnight-blue py-20 md:py-28 px-4 md:px-8"
+      className="bg-midnight-blue py-16 md:py-28 px-4 md:px-8"
     >
       <div className="max-w-[1200px] mx-auto">
-        <div className="projects-header mb-14">
+        <div className="projects-header mb-10 md:mb-14">
           <h2
             className="text-white text-3xl md:text-4xl font-bold mb-3"
             style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -366,7 +366,7 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {PROJECTS.map((project, index) => (
             <ProjectCard key={project.name} project={project} index={index} />
           ))}

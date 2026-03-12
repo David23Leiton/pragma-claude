@@ -83,10 +83,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-midnight-blue/60 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-end h-full px-6 md:px-16 lg:px-24 pb-24 md:pb-32 max-w-[1400px] mx-auto">
+      <div className="relative z-10 flex flex-col justify-end h-full px-5 sm:px-6 md:px-16 lg:px-24 pb-20 md:pb-32 max-w-[1400px] mx-auto">
         <h1
           ref={titleRef}
-          className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-6"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-6"
         >
           <span className="title-line block text-white opacity-0">
             Soluciones digitales que

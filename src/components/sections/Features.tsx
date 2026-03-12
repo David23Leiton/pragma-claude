@@ -74,16 +74,17 @@ function ProcessTimeline() {
           return (
             <div key={step.label} className="relative flex flex-col items-center z-10">
               <div
-                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${
+                className={`w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl flex items-center justify-center transition-all duration-500 ${
                   isActive
                     ? 'bg-electric-cyan text-midnight-blue shadow-[0_0_20px_rgba(0,212,255,0.3)]'
                     : 'bg-deep-charcoal/5 text-deep-charcoal/30'
                 }`}
               >
-                <Icon size={20} />
+                <Icon size={18} className="md:hidden" />
+                <Icon size={20} className="hidden md:block" />
               </div>
               <span
-                className={`mt-3 text-[11px] font-mono font-medium transition-colors duration-500 ${
+                className={`mt-2 md:mt-3 text-[9px] md:text-[11px] font-mono font-medium transition-colors duration-500 ${
                   isActive ? 'text-deep-charcoal' : 'text-deep-charcoal/30'
                 }`}
               >
