@@ -38,7 +38,7 @@ export default function Navbar() {
           <span className={cn('transition-colors duration-500', scrolled ? 'text-electric-cyan' : 'text-white')}>
             Pragma
           </span>{' '}
-          <span className={cn('transition-colors duration-500', scrolled ? 'text-electric-cyan' : 'text-electric-cyan')}>
+          <span className={cn('transition-colors duration-500', scrolled ? 'text-white' : 'text-electric-cyan')}>
             Digital
           </span>
         </a>
