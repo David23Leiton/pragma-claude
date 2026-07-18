@@ -1,24 +1,13 @@
-import Navbar from '@/components/layout/Navbar';
-import Hero from '@/components/sections/Hero';
-import LiveCodeSection from '@/components/sections/LiveCode';
-import FeaturesSection from '@/components/sections/Features';
-import ProjectsSection from '@/components/sections/Projects';
-import ManifestoSection from '@/components/sections/Manifesto';
-import Footer from '@/components/layout/Footer';
-import NoiseOverlay from '@/components/ui/NoiseOverlay';
+import { Routes, Route } from 'react-router-dom';
+import Home from '@/pages/Home';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
 
 function App() {
   return (
-    <main className="min-h-screen bg-smoke-white text-deep-charcoal">
-      <NoiseOverlay />
-      <Navbar />
-      <Hero />
-      <LiveCodeSection />
-      <FeaturesSection />
-      <ProjectsSection />
-      <ManifestoSection />
-      <Footer />
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 }
 

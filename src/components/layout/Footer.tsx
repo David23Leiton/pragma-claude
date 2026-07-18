@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { MessageCircle, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -43,6 +44,12 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
+            <Link
+              to="/privacy-policy"
+              className="text-white/50 hover:text-electric-cyan transition-colors text-sm"
+            >
+              Política de Privacidad
+            </Link>
           </div>
 
           {/* Right - Contact */}
